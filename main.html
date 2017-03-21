@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<!-- CSS Links -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Slabo+27px" rel="stylesheet">
+
+	<meta charset="utf-8">
+	<title>Úložisko receptov</title>
+</head>
+
+
+<body>
+	
+	<!-- Navigation Bar -->	
+	<nav class="navbar navbar-default navbar-fixed-top">
+
+	  <div class="container">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#"><i class="fa fa-home" aria-hidden="true"></i> B&L<span class="sr-only">(current)</span></a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li><a href="#"><i class="fa fa-cutlery" aria-hidden="true"></i> Hlavné jedlá</a></li>
+	        <li><a href="#"><i class="fa fa-birthday-cake" aria-hidden="true"></i> Koláče a sladkosti</a></li>
+	        <li><a href="#"><i class="fa fa-lemon-o" aria-hidden="true"></i> Smoothies</a></li>
+	      </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#">Prihlásiť sa</a></li>
+	  		<li><a href="#">Registrácia</a></li>
+	      </ul>
+	      <form class="navbar-form navbar-right">
+	        <div class="form-group">
+	          <input type="text" class="form-control" placeholder="Recept, Ingrediencia">
+	        </div>
+	        <button type="submit" class="btn btn-default">Hľadať</button>
+	      </form>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container -->
+	</nav>
+	<div class="background">
+		<form>
+			<div class="centerSearch">
+			  <div class="form-group">
+			    <label for="exampleInputName2">Múdre vyhľadávanie</label>
+			    <input type="text" class="form-control" id="exampleInputName2" placeholder="Recept, ingrediencie oddelené čiarkou">
+			    <button type="submit" class="btn btn-success btn-lg">Hľadať</button>
+			  </div>
+			</div>
+		</form> 
+	</div>
+	<div class="container">
+		<div class="jumbotron">
+			<h1> Posledný recept</h1>
+			<div class="row">
+  				<div class="col-lg-6">
+					<h2>
+					Rozvitý názov nejakého strašne dobrého jedla 
+					</h2>
+					<ul>
+						<li>Prvá ingrediencia</li>
+						<li>Druhá ingrediencia</li>
+						<li>Tretia ingrediencia</li>
+						<li>Štvrtá ingrediencia</li>
+						<li>Piata ingrediencia</li>
+					</ul>
+				<button class="btn-success btn-lg">Ukáž celý recept</button>
+				</div>
+				<div class="col-lg-6">
+					<img src="food1.jpg" class="img-fluid" alt="Responsive image">
+				</div>
+			</div>
+			
+		</div>
+		<div class="jumbotron">
+			<h1> Ďaľší recept</h1>
+			<div class="row">
+  				<div class="col-lg-6">
+					<h2>
+					Rozvitý názov nejakého strašne dobrého jedla 
+					</h2>
+					<ul>
+						<li>Prvá ingrediencia</li>
+						<li>Druhá ingrediencia</li>
+						<li>Tretia ingrediencia</li>
+						<li>Štvrtá ingrediencia</li>
+						<li>Piata ingrediencia</li>
+					</ul>
+					<button class="btn-success btn-lg">Ukáž celý recept</button>
+				</div>
+				<div class="col-lg-6">
+					<img src="food1.jpg" class="img-fluid" alt="Responsive image">
+				</div>
+			</div>
+		</div>
+	</div> <!-- Container -->
+
+	<!-- CDNs and Fallback -->
+	<!-- jQuery CDN -->
+	<script src="https://code.jquery.com/jquery-3.2.0.min.js" integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I=" crossorigin="anonymous"></script>
+	<!-- jQuery local fallback -->
+	<script>window.jQuery || document.write('<script src="jquery-3.2.0.min.js"><\/script>')</script>
+	<!-- Bootstrap JS CDN -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- Bootstrap JS local fallback -->
+	<script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="bootstrap.min.js"><\/script>')}</script>
+	<!-- Bootstrap CSS local fallback -->
+	<div id="bootstrapCssTest" class="hidden"></div>
+	<script>
+	  $(function() {
+	    if ($('#bootstrapCssTest').is(':visible')) {
+	      $("head").prepend('<link rel="stylesheet" href="bootstrap.min.css">');
+	    }
+	  });
+	</script> <!-- End of CDNs and Fallback -->
+
+
+</body>
+
+<footer>&copy; Copyright 2017 Lubos</footer>
+
+</html>
